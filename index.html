@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Products</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9ff;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  /* Product Card */
+  .product-card {
+    overflow: hidden; /* clearfix */
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  /* Columns */
+  .left-column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #e6e6fa; /* lavender */
+    border-radius: 10px;
+  }
+
+  .right-column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  img.product-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  h1 {
+    color: #4b0082; /* dark purple */
+  }
+
+  .price {
+    color: #800080; /* purple */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .add-to-cart {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #9370db; /* medium purple */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .add-to-cart:hover {
+    background-color: #7b68ee;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .left-column, .right-column {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .product-card {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Product 1: Rare Beauty Blush -->
+  <div class="product-card">
+    <div class="left-column">
+      <img class="product-image" src="img1.jpg" alt="Rare Beauty Blush">
+    </div>
+    <div class="right-column">
+      <h1>Rare Beauty Blush</h1>
+      <p class="price">$20.99</p>
+      <p class="description">
+        Add a natural flush to your cheeks with Rare Beauty Blush. Lightweight, blendable, and long-lasting for all-day wear. Perfect for a soft, radiant look.
+      </p>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+
+  <!-- Product 2: Dior Lip Gloss -->
+  <div class="product-card">
+    <div class="left-column">
+      <img class="product-image" src="img2.jpg" alt="Dior Lip Gloss">
+    </div>
+    <div class="right-column">
+      <h1>Dior Lip Gloss</h1>
+      <p class="price">$34.99</p>
+      <p class="description">
+        Get a high-shine, luxurious finish with Dior Lip Gloss. Hydrating and vibrant, it enhances your lips with a smooth, glossy look. Ideal for everyday glamour.
+      </p>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
